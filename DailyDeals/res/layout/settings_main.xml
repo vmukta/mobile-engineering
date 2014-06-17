@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/maintitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_blue"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/settings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:text="@string/account_string"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/titlebar_text" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/avatar_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maintitle"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:id="@+id/user_detail_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maintitle"
+        android:layout_toRightOf="@id/avatar_image"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/users_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="6dp"
+            android:ellipsize="middle"
+            android:gravity="bottom"
+            android:paddingLeft="5dp"
+            android:paddingTop="25dp"
+            android:scrollHorizontally="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dip"
+            android:ellipsize="middle"
+            android:gravity="bottom"
+            android:paddingLeft="5dp"
+            android:scrollHorizontally="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#939598"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

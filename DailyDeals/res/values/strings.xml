@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Deal Finder</string>
+    <string name="action_settings">Settings</string>
+	<string name="deals_string">Today\'s Deals</string>
+	<string name="error_no_deals_found">Ops! you are out of luck. No more deals for the day</string>
+	<string name="account_string">Account</string>
+</resources>
