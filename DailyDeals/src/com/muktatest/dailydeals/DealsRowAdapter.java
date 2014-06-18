@@ -17,6 +17,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ImageView.ScaleType;
 import android.widget.TextView;
 
 import com.muktatest.dailydeals.DealsFormatter.TodaysDeal;
@@ -46,6 +47,7 @@ public class DealsRowAdapter extends ArrayAdapter<TodaysDeal> {
 				.findViewById(R.id.deals_description);
 		ImageView dealImage = (ImageView) rowView
 				.findViewById(R.id.dealsicon_image);
+		dealImage.setScaleType(ScaleType.CENTER_INSIDE);
 		final String dealLink = values.get(position).getLink();
 
 		dealImage.setOnClickListener(new OnClickListener() {
@@ -108,6 +110,7 @@ public class DealsRowAdapter extends ArrayAdapter<TodaysDeal> {
 
 		protected void onPostExecute(Bitmap result) {
 			bmImage.setImageBitmap(result);
+			
 		}
 	}
 }

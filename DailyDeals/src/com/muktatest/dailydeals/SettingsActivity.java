@@ -3,6 +3,7 @@ package com.muktatest.dailydeals;
 
 import java.io.InputStream;
 
+
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -13,7 +14,7 @@ import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class SettingsActivity extends FragmentActivity {
+public class SettingsActivity extends FragmentActivity  {
 
 	@Override
 	public void onBackPressed() {
@@ -83,4 +84,7 @@ public class SettingsActivity extends FragmentActivity {
 	        bmImage.setImageBitmap(result);
 	    }
 	}
+
+
+	
 }
